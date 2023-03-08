@@ -1,0 +1,206 @@
+@import "../../sass/_mixin";
+@import "../../sass/_variables";
+
+.public {
+  &__container {
+    padding: 10px;
+  }
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 70%;
+      height: 50%;
+      object-fit: cover;
+    }
+    &__content {
+      position: absolute;
+      bottom: -25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      max-width: 170px;
+      min-height: 120px;
+      background: #ffffff;
+      box-shadow: 0px 25px 40px rgba(0, 0, 0, 0.05);
+      border-radius: 16px;
+      &__container {
+        @include absolute;
+        h1 {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 700;
+          font-size: $fs-16;
+          line-height: 19px;
+          text-align: center;
+          letter-spacing: -0.02em;
+          color: #010101;
+        }
+        p {
+          font-family: "Inter", sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: $fs-13;
+          line-height: 16px;
+          text-align: center;
+          color: #424242;
+        }
+        .list__avatar {
+          img {
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+          }
+          .circle {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background-color: #f77e53;
+            .text {
+              @include absolute;
+              font-family: "Inter", sans-serif;
+              font-style: normal;
+              font-weight: 600;
+              font-size: $fs-12;
+              line-height: 17px;
+              text-align: center;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+    .public__circle {
+      position: absolute;
+      right: 26%;
+      bottom: -15%;
+      width: 40px;
+      height: 40px;
+      background-color: #fae9d9;
+      border-radius: 50%;
+    }
+  }
+
+  &__right {
+    &__title {
+      max-width: 450px;
+      margin-bottom: 30px;
+      h1 {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 56px;
+        letter-spacing: -0.01em;
+        color: #101130;
+        text-transform: unset;
+      }
+    }
+    &__item {
+      .image {
+        img {
+          @include absolute;
+          width: 50%;
+          height: 50%;
+          object-fit: cover;
+        }
+        width: 60px;
+        height: 60px;
+        background: #d2f1e1;
+        border-radius: 16px;
+      }
+      h1 {
+        margin: 26px 0 12px 0;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #101130;
+      }
+      p {
+        font-family: "Roboto", sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        /* or 167% */
+        color: #606176;
+      }
+    }
+  }
+}
+.css-ah0e1x-MuiPaper-root {
+  box-shadow: none !important;
+}
+
+// @media (max-width: 768px) {
+//   .public {
+//     &__right {
+//       &__title {
+//         h1 {
+//           margin-top: 42px !important;
+//           font-size: 40px;
+//         }
+//       }
+//       &__item {
+//         .image {
+//           width: 50px;
+//           height: 50px;
+//         }
+//         h1 {
+//           margin: 16px 0 10px 0;
+//           font-size: 18px;
+//         }
+//         p {
+//           font-size: $fs-14;
+//         }
+//       }
+//     }
+//   }
+// }
+@media (max-width: 910px) {
+  .public {
+    &__right {
+      &__title {
+        margin-top: 50px;
+        margin-bottom: 20px;
+        h1 {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 440px) {
+  .public {
+    margin: 10px 0 !important;
+    &__right {
+      &__title {
+        margin-bottom: 10px;
+        h1 {
+          margin-top: 42px !important;
+          font-size: 28px;
+          line-height: 32px;
+        }
+      }
+      &__item {
+        .image {
+          width: 50px;
+          height: 50px;
+        }
+        h1 {
+          margin: 16px 0 10px 0;
+          font-size: 18px;
+          line-height: 18px;
+        }
+        p {
+          font-size: $fs-16;
+          line-height: 26px;
+        }
+      }
+    }
+  }
+}
