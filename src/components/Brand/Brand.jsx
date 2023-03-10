@@ -20,17 +20,31 @@ const Brand = () => {
       <Box
         className="brand__container container flex"
         style={{ overflow: "hidden" }}
+        data-aos="fade-zoom-in"
+        data-aos-easing="ease-in-back"
+        data-aos-delay="300"
+        data-aos-offset="0"
       >
         <div className="count">
-          <div className="title">400+</div>
-          <span>Universities worldwide that partner with us</span>
+          <div
+            className="title fs-42 fw-700"
+            style={{ fontStyle: "normal", fontFamily: '"Inter", sans-serif' }}
+          >
+            400+
+          </div>
+          <span
+            className="fs-18 fw-400"
+            style={{ fontStyle: "normal", fontFamily: '"Inter", sans-serif' }}
+          >
+            Universities worldwide that partner with us
+          </span>
         </div>
-        <Grid container spacing={2}>
+        <Grid container spacing={1}>
           <Grid item xs={6} md={3}>
             <Item>
               <div className="brand__item">
                 <p
-                  className="fs-36 fw-400"
+                  className="fs-30 fw-500"
                   style={{ color: "#B8DCFF", letterSpacing: "1px" }}
                 >
                   McGill
@@ -52,7 +66,7 @@ const Brand = () => {
             <Item>
               <div className="brand__item">
                 <p
-                  className="fs-36 fw-400"
+                  className="fs-30 fw-500"
                   style={{
                     color: "#F6C07A",
                     letterSpacing: "1px",
@@ -88,7 +102,7 @@ const Brand = () => {
                   University of
                 </p>
                 <span
-                  className="fs-36 fw-500"
+                  className="fs-30 fw-500"
                   style={{
                     color: "#F77E53",
                     letterSpacing: "1px",
@@ -114,7 +128,7 @@ const Brand = () => {
                   University of
                 </p>
                 <span
-                  className="fs-36 fw-500"
+                  className="fs-30 fw-500"
                   style={{
                     color: "#2071F6",
                     letterSpacing: "1px",

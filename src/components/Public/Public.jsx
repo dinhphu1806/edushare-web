@@ -26,20 +26,53 @@ const Public = () => {
     <div className="public secsion">
       <Box className="public__container container">
         <Grid container spacing={2} className="public__list">
-          <Grid item xs={12} md={5} className="public__left relative">
+          <Grid
+            item
+            xs={12}
+            md={5}
+            className="public__left flex flex-center relative"
+            data-aos="zoom-out-right"
+          >
             <Item className="flex flex-center relative">
               <img src={img} alt="" />
-              <div className="public__left__content">
+              <div
+                className="public__left__content"
+                style={{ backgroundColor: "#fff", borderRadius: "16px" }}
+              >
                 <div className="public__left__content__container">
-                  <h1>56, 5470+</h1>
-                  <p>Peoples are learning</p>
+                  <h1
+                    className="fs-16 fw-700 text-center"
+                    style={{
+                      fontFamily: '"Inter", sans-serif',
+                      fontStyle: "normal",
+                    }}
+                  >
+                    56, 5470+
+                  </h1>
+                  <p
+                    className="fs-13 fw-400 text-center"
+                    style={{
+                      fontFamily: '"Inter", sans-serif',
+                      fontStyle: "normal",
+                    }}
+                  >
+                    Peoples are learning
+                  </p>
                   <div className="list__avatar flex flex-center mt-1">
                     <img src={avatar1} alt="" />
                     <img src={avatar2} alt="" />
                     <img src={avatar3} alt="" />
                     <img src={avatar4} alt="" />
                     <div className="circle relative">
-                      <div className="text">3+</div>
+                      <div
+                        className="text fs-12 fw-600 text-center"
+                        style={{
+                          fontFamily: '"Inter", sans-serif',
+                          fontStyle: "normal",
+                        }}
+                      >
+                        3+
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -49,9 +82,26 @@ const Public = () => {
           </Grid>
           <Grid item xs={12} md={7} className="public__right">
             <div className="public__right__title">
-              <h1>How our online public school works</h1>
+              <h1
+                data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300"
+                data-aos-offset="0"
+                className="fw-700 "
+                style={{
+                  fontFamily: '"Inter", sans-serif',
+                  fontStyle: "normal",
+                }}
+              >
+                How our online public school works
+              </h1>
             </div>
-            <Grid container spacing={2} className="public__right__content">
+            <Grid
+              container
+              spacing={2}
+              className="public__right__content"
+              data-aos="zoom-out-left"
+            >
               {dataPublic.map((item) => {
                 return (
                   <Grid
@@ -66,8 +116,24 @@ const Public = () => {
                       <div className="image relative">
                         <img src={item.image} alt="" />
                       </div>
-                      <h1>{item.title}</h1>
-                      <p>{item.desc}</p>
+                      <h1
+                        className="fw-600"
+                        style={{
+                          fontFamily: '"Inter", sans-serif',
+                          fontStyle: "normal",
+                        }}
+                      >
+                        {item.title}
+                      </h1>
+                      <p
+                        className="fw-400"
+                        style={{
+                          fontFamily: '"Roboto", sans-serif',
+                          fontStyle: "normal",
+                        }}
+                      >
+                        {item.desc}
+                      </p>
                     </Item>
                   </Grid>
                 );

@@ -101,14 +101,24 @@ const Feedback = () => {
   return (
     <div className="feedback secsion">
       <div className="feedback__container container relative">
-        <div className="feedback__title flex flex-between">
+        <div
+          className="feedback__title flex flex-between"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
           <h1>Transform your life through education</h1>
           {/* <div className="feedback__arrow flex">
             <i class="fa-sharp fa-solid fa-arrow-left"></i>
             <i class="fa-sharp fa-solid fa-arrow-right"></i>
           </div> */}
         </div>
-        <div className="feedback__content">
+        <div
+          className="feedback__content"
+          data-aos="fade-up"
+          data-aos-duration="2000"
+        >
           <Slider
             className="owl-theme feedback__content__container"
             {...settings}

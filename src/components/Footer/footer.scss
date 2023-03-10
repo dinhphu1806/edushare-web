@@ -1,5 +1,6 @@
 @import "../../sass/_mixin";
 @import "../../sass/_variables";
+@import "../../sass/_reset";
 
 .footer {
   &__container {
@@ -8,73 +9,84 @@
   &__logo {
     &__icon {
       // @include absolute;
-      width: 38px;
-      height: 38px;
+      // width: 38px;
+      // height: 38px;
       background-color: #f77e53;
       border-radius: 19px;
-      font-weight: 800;
-      font-style: normal;
-      font-size: $fs-28;
+      // font-weight: 800;
+      // font-style: normal;
+      // font-size: $fs-28;
       line-height: 37px;
       letter-spacing: -0.01em;
-      color: #fff;
-      font-family: "Exo", sans-serif;
+      // color: #fff;
+      // font-family: "Exo", sans-serif;
     }
     span {
       margin-left: 5px;
-      font-family: "Exo", sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: $fs-24;
+      // font-family: "Exo", sans-serif;
+      // font-style: normal;
+      // font-weight: 700;
+      // font-size: $fs-24;
       line-height: 32px;
       letter-spacing: -0.01em;
-      color: #0f1130;
+      // color: #0f1130;
+      color: var(--clr-font);
     }
   }
   &__text {
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: $fs-15;
+    // font-family: "Inter", sans-serif;
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: $fs-15;
     line-height: 26px;
     letter-spacing: -0.02em;
-    color: #606176;
+    // color: #606176;
+    color: var(--clr-font);
   }
   &__item {
     // padding: 8px 30px;
     h1 {
-      font-family: "Inter", sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: $fs-22;
+      // font-family: "Inter", sans-serif;
+      // font-style: normal;
+      // font-weight: 700;
+      // font-size: $fs-22;
       line-height: 29px;
       // text-align: center;
       padding: 0 30px;
       letter-spacing: -0.01em;
-      color: #101130;
+      // color: #101130;
+      color: var(--clr-font);
     }
     ul {
       li {
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 400;
-        font-size: $fs-14;
+        // font-family: "Inter", sans-serif;
+        // font-style: normal;
+        // font-weight: 400;
+        // font-size: $fs-14;
         line-height: 19px;
         letter-spacing: -0.01em;
-        color: #606176;
+        // color: #606176;
+        color: var(--clr-font);
         padding: 8px 30px;
       }
     }
   }
   &__auth {
     margin-top: 30px;
-    font-family: "Inter", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: $fs-15;
+    // font-family: "Inter", sans-serif;
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: $fs-15;
     line-height: 18px;
     letter-spacing: -0.01em;
-    color: #606176;
+    // color: #606176;
+    color: var(--clr-font);
+  }
+  &__links {
+    border: 1px solid var(--clr-footer);
+    &__icon {
+      color: var(--clr-footer);
+    }
   }
 }
 @media (max-width: 910px) {

@@ -15,11 +15,25 @@ video {
   display: block;
   max-width: 100%;
 }
+.dark-theme {
+  --clr-bgc: #282c35;
+  --clr-font: #fff;
+  --clr-primary: #ffa7c4;
+  --clr-footer: #ccc;
+}
+.light-theme {
+  --clr-bgc: #fff;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+  --clr-footer: #606176;
+}
 body {
   min-height: 100vh;
   line-height: 1.6;
   font-family: "Poppins", sans-serif;
-  color: #000;
+  background: var(--clr-bgc);
+  // color: #000;
+  color: var(--clr-font);
 }
 ul {
   list-style: none;
@@ -35,12 +49,6 @@ h4,
 h5,
 h6 {
   text-transform: capitalize;
-}
-
-.img-cover {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 button {

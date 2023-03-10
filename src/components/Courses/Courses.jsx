@@ -23,11 +23,39 @@ const Courses = () => {
   return (
     <div className="courses secsion">
       <div className="courses__container container">
-        <div className="courses__title flex flex-between">
-          <h1>How our online public school works</h1>
-          <a href="">View all courses</a>
+        <div
+          className="courses__title flex flex-between"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+        >
+          <h1
+            className="fw-700"
+            style={{ fontFamily: '"Inter", sans-serif', fontStyle: "normal" }}
+          >
+            How our online public school works
+          </h1>
+          <a
+            href=""
+            className="fw-400 text-center"
+            style={{
+              fontFamily: '"Inter", sans-serif',
+              fontFamily: "normal",
+              borderRadius: "12px",
+            }}
+          >
+            View all courses
+          </a>
         </div>
-        <div className="courses__content">
+        <div
+          className="courses__content"
+          data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="300"
+          data-aos-offset="0"
+          data-aos-duration="1500"
+        >
           <Grid container spacing={2}>
             {dataCourses.map((item) => {
               return (
@@ -43,7 +71,15 @@ const Courses = () => {
                     <div className="image">
                       <img src={item.image} alt="" />
                     </div>
-                    <h1>{item.title}</h1>
+                    <h1
+                      className="fw-600"
+                      style={{
+                        fontFamily: '"Inter", sans-serif',
+                        fontStyle: "normal",
+                      }}
+                    >
+                      {item.title}
+                    </h1>
                     <div className="display flex flex-between">
                       <div className="display__view flex">
                         <HiUserGroup
@@ -60,7 +96,13 @@ const Courses = () => {
                         {item.time}
                       </div>
                     </div>
-                    <button className="flex flex-center">
+                    <button
+                      className="flex flex-center fs-14 fw-400"
+                      style={{
+                        fontFamily: '"Inter", sans-serif',
+                        fontStyle: "normal",
+                      }}
+                    >
                       <BsCartPlusFill
                         className="icon"
                         style={{ marginRight: "3px" }}

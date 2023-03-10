@@ -1,26 +1,29 @@
 @import "../../sass/_mixin";
 @import "../../sass/_variables";
+@import "../../sass/_reset";
 
 .brand {
   &__container {
     padding: 10px;
     .count {
       .title {
-        font-family: "Inter", sans-serif;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 42px;
+        // font-family: "Inter", sans-serif;
+        // font-style: normal;
+        // font-weight: 700;
+        // font-size: 42px;
         line-height: 45px;
-        color: #101131;
+        // color: #101131;
+        color: var(--clr-font);
       }
       span {
-        font-family: "Inter", sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: $fs-18;
+        // font-family: "Inter", sans-serif;
+        // font-style: normal;
+        // font-weight: 400;
+        // font-size: $fs-18;
         line-height: 20px;
         letter-spacing: -0.01em;
-        color: #606176;
+        // color: #606176;
+        color: var(--clr-font);
       }
     }
   }

@@ -25,8 +25,22 @@ const Lecture = () => {
       <div className="lecture__container container">
         <Grid container spacing={2} className="flex">
           <Grid item xs={12} md={6}>
-            <Item className="lecture__left">
-              <h1>Transform your life through education</h1>
+            <Item
+              className="lecture__left"
+              data-aos="fade-zoom-in"
+              data-aos-easing="ease-in-back"
+              data-aos-delay="300"
+              data-aos-offset="0"
+            >
+              <h1
+                className="fw-700"
+                style={{
+                  fontFamily: '"Inter", sans-serif',
+                  fontStyle: "normal",
+                }}
+              >
+                Transform your life through education
+              </h1>
               <p>
                 Ariel Hocsman launched a new career in software development by
                 taking courses on Besnik. What will you be able to do?
@@ -36,7 +50,11 @@ const Lecture = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Item>
-              <div className="lecture__right relative">
+              <div
+                className="lecture__right relative"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
                 <div className="lecture__right__overlay"></div>
                 <div className="lecture__right__image">
                   <img src={imgbanner} alt="" />

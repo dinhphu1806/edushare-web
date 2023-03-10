@@ -1,11 +1,13 @@
 @import "../../sass/_mixin";
 @import "../../sass/_variables";
+@import "../../sass/_reset";
 
 .feature {
   &__container {
     padding: 10px;
   }
   &__title {
+    margin-bottom: 20px;
     h1 {
       max-width: 591px;
       font-family: "Inter", sans-serif;
@@ -14,12 +16,14 @@
       font-size: 44px;
       line-height: 56px;
       letter-spacing: -0.01em;
-      color: #101130;
+      // color: #101130;
+      color: var(--clr-font);
       text-transform: unset;
     }
     a {
       padding: 12px 22px;
-      border: 1px solid #2076ff;
+      // border: 1px solid #2076ff;
+      border: 1px solid var(--clr-font);
       border-radius: 12px;
       font-family: "Inter", sans-serif;
       font-style: normal;
@@ -29,16 +33,18 @@
       text-align: center;
       letter-spacing: -0.01em;
       color: #2076ff;
+      color: var(--clr-font);
     }
   }
   &__items {
     width: 100%;
-    height: 587px;
+    // height: 587px;
   }
   &__item {
+    background-color: var(--clr-bgc) !important ;
     &__title {
       height: 90px;
-      background-color: #2076ff;
+      // background-color: #2076ff;
       border-top-right-radius: 18px;
       border-top-left-radius: 18px;
       span {
@@ -52,8 +58,8 @@
       }
     }
     &__price {
-      background-color: #edf3ff;
-      padding: 30px 0;
+      // background-color: #edf3ff;
+      padding: 20px 0;
       h1 {
         font-family: "Inter", sans-serif;
         font-style: normal;
@@ -73,7 +79,7 @@
   }
   &__content {
     padding: 0 50px;
-    background-color: #edf3ff;
+    // background-color: #edf3ff;
     &__item {
       padding: 10px 0;
       .circle {
@@ -94,7 +100,7 @@
     }
   }
   &__btn {
-    background-color: #edf3ff;
+    // background-color: #edf3ff;
     padding: 40px 0;
     border-bottom-left-radius: 18px;
     border-bottom-right-radius: 18px;
@@ -103,7 +109,7 @@
       max-width: 260px;
       margin: 0 auto;
       padding: 20px 40px;
-      border: 1px solid #2076ff;
+      // border: 1px solid #2076ff;
       border-radius: 14px;
       font-family: "Inter", sans-serif;
       font-style: normal;
@@ -111,11 +117,11 @@
       font-size: 20px;
       line-height: 24px;
       text-align: center;
-      color: #2076ff;
+      // color: #2076ff;
     }
   }
 }
-.css-1975gxh-MuiPaper-root {
+.css-1sir9cm-MuiPaper-root {
   box-shadow: none !important;
 }
 
@@ -193,7 +199,7 @@
           span {
             position: absolute;
             top: -10px;
-            left: 35% !important;
+            left: 40% !important;
             font-size: $fs-14;
           }
         }

@@ -16,7 +16,7 @@ const Home = () => {
       <Courses />
       <Lecture />
       <Feedback />
-      {/* <Feature /> */}
+      <Feature />
     </div>
   );
 };
