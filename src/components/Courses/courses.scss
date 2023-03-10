@@ -83,7 +83,7 @@
       // font-family: "Inter", sans-serif;
       // font-style: normal;
       // font-weight: 400;
-      font-size: 14px;
+      // font-size: 14px;
       line-height: 22px;
       letter-spacing: -0.01em;
       transition: all 0.2s linear;
@@ -154,6 +154,9 @@
   }
 }
 
-.css-1rk0w4o-MuiPaper-root {
+// .css-1rk0w4o-MuiPaper-root {
+//   background-color: var(--clr-bgc) !important;
+// }
+.css-1vr8e9l {
   background-color: var(--clr-bgc) !important;
 }
