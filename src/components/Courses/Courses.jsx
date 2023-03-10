@@ -41,7 +41,7 @@ const Courses = () => {
             className="fw-400 text-center"
             style={{
               fontFamily: '"Inter", sans-serif',
-              fontFamily: "normal",
+              fontStyle: "normal",
               borderRadius: "12px",
             }}
           >
