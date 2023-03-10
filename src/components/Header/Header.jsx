@@ -16,8 +16,8 @@ import { motion } from "framer-motion";
 //   return theme;
 // };
 
-const getThemeStorage = () => {
-  let theme = "ligh-theme";
+const getThemeToStorage = () => {
+  let theme = "light-theme";
   if (localStorage.getItem("theme")) {
     theme = localStorage.getItem("theme");
   }
@@ -27,7 +27,7 @@ const getThemeStorage = () => {
 const Header = () => {
   const [openMobile, setOpenMobile] = useState(false);
 
-  const [theme, setTheme] = useState(getThemeStorage());
+  const [theme, setTheme] = useState(getThemeToStorage());
 
   const toggleTheme = () => {
     if (theme === "light-theme") {

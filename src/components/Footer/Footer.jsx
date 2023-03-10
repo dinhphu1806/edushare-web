@@ -41,9 +41,11 @@ const Footer = () => {
                   style={{
                     width: "38px",
                     height: "38px",
-                    color: "#fff",
-                    fontFamily: '"Exo", sans-serif',
+                    backgroundColor: "#f77e53",
                     fontStyle: "normal",
+                    borderRadius: "19px",
+                    fontFamily: '"Exo", sans-serif',
+                    color: "#fff",
                   }}
                 >
                   E

@@ -12,7 +12,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  // backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
   ...theme.typography.body2,
   padding: theme.spacing(3),
   textAlign: "left",
@@ -43,6 +43,7 @@ const Courses = () => {
               fontFamily: '"Inter", sans-serif',
               fontStyle: "normal",
               borderRadius: "12px",
+              textTransform: "unset",
             }}
           >
             View all courses
@@ -66,10 +67,11 @@ const Courses = () => {
                   sm={6}
                   md={4}
                   className="courses__items"
+                  style={{ borderRadius: "14px" }}
                 >
                   <Item className="courses__item">
                     <div className="image">
-                      <img src={item.image} alt="" />
+                      <img src={item.image} className="img-cover" alt="" />
                     </div>
                     <h1
                       className="fw-600"
@@ -97,15 +99,18 @@ const Courses = () => {
                       </div>
                     </div>
                     <button
-                      className="flex flex-center fs-14 fw-400"
+                      className="w-full flex flex-center fs-14 fw-400"
                       style={{
                         fontFamily: '"Inter", sans-serif',
                         fontStyle: "normal",
+                        borderRadius: "7px",
+                        border: "1px solid #2076ff",
+                        cursor: "pointer",
                       }}
                     >
                       <BsCartPlusFill
                         className="icon"
-                        style={{ marginRight: "3px" }}
+                        style={{ marginRight: "7px" }}
                       />
                       Add to Cart
                     </button>
