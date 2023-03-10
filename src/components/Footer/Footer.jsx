@@ -35,7 +35,7 @@ const Footer = () => {
         >
           <Grid item xs={12} sm={12} md={3}>
             <Item className="footer__item">
-              <div className="footer__logo flex relative">
+              <div className="footer__logo flex relative mb-1">
                 <div
                   className="header__logo__icon flex flex-center fs-28 fw-800"
                   style={{
@@ -86,7 +86,7 @@ const Footer = () => {
                         fontFamily: '"Inter", sans-serif',
                       }}
                     >
-                      {item.tilte}
+                      <a href="">{item.tilte}</a>
                     </li>
                   );
                 })}
@@ -106,7 +106,11 @@ const Footer = () => {
               </h1>
               <ul>
                 {dataSupport.map((item) => {
-                  return <li key={item.id}>{item.tilte}</li>;
+                  return (
+                    <li key={item.id}>
+                      <a href="">{item.tilte}</a>
+                    </li>
+                  );
                 })}
               </ul>
             </Item>

@@ -5,8 +5,18 @@ import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import { MdDarkMode } from "react-icons/md";
+import { BiSearch } from "react-icons/bi";
 
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+
+// const getThemeToStorage = () => {
+//   let theme = "light-theme";
+//   if (localStorage.getItem("theme")) {
+//     theme = localStorage.getItem("theme");
+//   }
+//   return theme;
+// };
 
 // const getThemeToStorage = () => {
 //   let theme = "light-theme";
@@ -29,6 +39,8 @@ const Header = () => {
 
   const [theme, setTheme] = useState(getThemeToStorage());
 
+  const navigate = useNavigate();
+
   const toggleTheme = () => {
     if (theme === "light-theme") {
       setTheme("dark-theme");
@@ -41,7 +53,6 @@ const Header = () => {
     document.documentElement.className = theme;
     localStorage.setItem("theme", theme);
   }, [theme]);
-
   return (
     <div className="header">
       <div className="header__container container flex flex-between ">
@@ -97,10 +108,24 @@ const Header = () => {
           >
             <MdDarkMode className="darkmode fs-22" />
           </motion.button>
-          <div className="header__login__desktop">Sign In</div>
+          <motion.div
+            whileTap={{ scale: 1.2 }}
+            className="header__login__desktop "
+            onClick={() => navigate("/signin")}
+            style={{ cursor: "pointer" }}
+          >
+            Sign In
+          </motion.div>
         </div>
 
         <div className="flex flex-between">
+          <motion.div
+            whileTap={{ scale: 1.2 }}
+            className="header__search__mobile mr-1 "
+            style={{ cursor: "pointer" }}
+          >
+            <BiSearch className="fs-18 fw-600" />
+          </motion.div>
           <motion.button
             whileTap={{ scale: 1.2 }}
             className="header__darkmode-mobile mr-2"
@@ -109,10 +134,14 @@ const Header = () => {
             <MdDarkMode className="darkmode fs-18 fw-600" />
           </motion.button>
           <div
-            className="header__icon__bars fs-28"
+            className="header__icon__bars fs-24"
             onClick={() => setOpenMobile(!openMobile)}
           >
-            {openMobile ? <ImCross className="close" /> : <FaBars />}
+            {openMobile ? (
+              <ImCross className="close" />
+            ) : (
+              <FaBars className="fs-24" />
+            )}
           </div>
         </div>
       </div>

@@ -135,23 +135,23 @@ const Feedback = () => {
                       <p>{item.address}</p>
                       <div className="star flex mt-1">
                         <i
-                          class="fa-solid fa-star"
+                          className="fa-solid fa-star"
                           style={{ color: "#FFB800", fontSize: "12px" }}
                         ></i>
                         <i
-                          class="fa-solid fa-star"
+                          className="fa-solid fa-star"
                           style={{ color: "#FFB800", fontSize: "12px" }}
                         ></i>
                         <i
-                          class="fa-solid fa-star"
+                          className="fa-solid fa-star"
                           style={{ color: "#FFB800", fontSize: "12px" }}
                         ></i>
                         <i
-                          class="fa-solid fa-star"
+                          className="fa-solid fa-star"
                           style={{ color: "#FFB800", fontSize: "12px" }}
                         ></i>
                         <i
-                          class="fa-solid fa-star"
+                          className="fa-solid fa-star"
                           style={{ color: "#FFB800", fontSize: "12px" }}
                         ></i>
                       </div>

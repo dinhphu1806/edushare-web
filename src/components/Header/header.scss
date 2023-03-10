@@ -76,6 +76,9 @@
   &__darkmode-mobile {
     display: none;
   }
+  &__search__mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -151,10 +154,17 @@
         }
       }
     }
+
     &__darkmode-desktop {
       display: none;
     }
     &__darkmode-mobile {
+      display: block;
+    }
+    &__search__desktop {
+      display: none;
+    }
+    &__search__mobile {
       display: block;
     }
   }

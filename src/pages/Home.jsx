@@ -1,4 +1,5 @@
 import React from "react";
+import BackToTop from "../components/BackToTop/BackToTop";
 import Banner from "../components/Banner/Banner";
 import Brand from "../components/Brand/Brand";
 import Courses from "../components/Courses/Courses";

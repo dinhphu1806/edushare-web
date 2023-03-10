@@ -60,19 +60,55 @@ const Feature = () => {
                     className="feature__content__item flex flex-start"
                     style={{ width: "100%" }}
                   >
-                    <div className="circle "></div>
+                    <div
+                      className="circle"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: "#2076ff",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>1 Day Event</p>
                   </div>
                   <div className="feature__content__item flex flex-start">
-                    <div className="circle"></div>
+                    <div
+                      className="circle"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: "#2076ff",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>1 Speaker</p>
                   </div>
                   <div className="feature__content__item flex flex-start">
-                    <div className="circle"></div>
+                    <div
+                      className="circle"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: "#2076ff",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>Interaction Sessions</p>
                   </div>
                   <div className="feature__content__item flex flex-start">
-                    <div className="circle"></div>
+                    <div
+                      className="circle"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: "#2076ff",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>35 Classes</p>
                   </div>
                 </div>
@@ -96,10 +132,10 @@ const Feature = () => {
               sm={12}
               md={4}
               className="feature__items "
-              data-aos="zoom-out"
+              data-aos="zoom-in"
               data-aos-duration="1000"
               data-aos-delay="300"
-              data-aos-easing="ease-in-back"
+              // data-aos-easing="ease-in-back"
             >
               <Item className="feature__item">
                 <div
@@ -127,19 +163,55 @@ const Feature = () => {
                     className="feature__content__item flex flex-start"
                     style={{ width: "100%" }}
                   >
-                    <div className="circle "></div>
+                    <div
+                      className="circle "
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: "#F6C07A",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>1 Day Event</p>
                   </div>
                   <div className="feature__content__item flex flex-start">
-                    <div className="circle"></div>
+                    <div
+                      className="circle"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: "#F6C07A",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>1 Speaker</p>
                   </div>
                   <div className="feature__content__item flex flex-start">
-                    <div className="circle"></div>
+                    <div
+                      className="circle"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: "#F6C07A",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>Interaction Sessions</p>
                   </div>
                   <div className="feature__content__item flex flex-start">
-                    <div className="circle"></div>
+                    <div
+                      className="circle"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: "#F6C07A",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>35 Classes</p>
                   </div>
                 </div>
@@ -189,19 +261,55 @@ const Feature = () => {
                     className="feature__content__item flex flex-start"
                     style={{ width: "100%" }}
                   >
-                    <div className="circle "></div>
+                    <div
+                      className="circle "
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: " #F77E53",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>1 Day Event</p>
                   </div>
                   <div className="feature__content__item flex flex-start">
-                    <div className="circle"></div>
+                    <div
+                      className="circle"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: " #F77E53",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>1 Speaker</p>
                   </div>
                   <div className="feature__content__item flex flex-start">
-                    <div className="circle"></div>
+                    <div
+                      className="circle"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: " #F77E53",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>Interaction Sessions</p>
                   </div>
                   <div className="feature__content__item flex flex-start">
-                    <div className="circle"></div>
+                    <div
+                      className="circle"
+                      style={{
+                        width: "12px",
+                        height: "12px",
+                        backgroundColor: " #F77E53",
+                        borderRadius: "50%",
+                        marginRight: "15px",
+                      }}
+                    ></div>
                     <p>35 Classes</p>
                   </div>
                 </div>

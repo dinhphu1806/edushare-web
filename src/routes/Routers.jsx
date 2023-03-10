@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import Profile from "../pages/Profile";
 import Courses from "../pages/Courses";
 import Contact from "../pages/Contact";
+import SignIn from "../pages/SignIn";
 
 const Routers = () => {
   return (
@@ -12,6 +13,7 @@ const Routers = () => {
       <Route path="/profile" element={<Profile />} />
       <Route path="/courses" element={<Courses />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/signin" element={<SignIn />} />
     </Routes>
   );
 };
