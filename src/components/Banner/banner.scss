@@ -38,6 +38,10 @@
       line-height: 22px;
       letter-spacing: -0.01em;
       // color: #fef4f1;
+      &:hover {
+        background-color: #2076ff !important;
+        transition: all 0.3s linear;
+      }
     }
     span {
       margin-top: 28px;
@@ -51,6 +55,10 @@
         margin-left: 5px;
         // color: rgba(32, 118, 255, 1);
         color: var(--clr-font);
+        &:hover {
+          text-decoration: underline;
+          transition: all 0.3s linear;
+        }
       }
     }
   }

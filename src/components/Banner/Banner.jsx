@@ -61,6 +61,7 @@ const Banner = () => {
                     fontFamily: '"Inter", sans-serif',
                     fontStyle: "normal",
                     color: "#fef4f1",
+                    cursor: "pointer",
                   }}
                   className="fw-600 fs-18"
                 >

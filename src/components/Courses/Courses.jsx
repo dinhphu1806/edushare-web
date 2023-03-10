@@ -32,7 +32,11 @@ const Courses = () => {
         >
           <h1
             className="fw-700"
-            style={{ fontFamily: '"Inter", sans-serif', fontStyle: "normal" }}
+            style={{
+              fontFamily: '"Inter", sans-serif',
+              fontStyle: "normal",
+              textTransform: "unset",
+            }}
           >
             How our online public school works
           </h1>
