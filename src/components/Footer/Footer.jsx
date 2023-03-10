@@ -189,10 +189,10 @@ const Footer = () => {
         />
 
         <div
-          className="footer__auth fs-15 fw-400"
-          style={{ fontStyle: '"Inter", sans-serif', fontStyle: "normal" }}
+          className="footer__auth flex fs-15 fw-400"
+          style={{ fontFamily: '"Inter", sans-serif', fontStyle: "normal" }}
         >
-          Copyright by dinhphu1806 2023 All rights reserved.
+          Copyright 2023 developed by dinhphu186. All rights reserved ❤️❤️
         </div>
       </div>
     </div>

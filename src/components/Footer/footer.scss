@@ -104,6 +104,9 @@
         margin-top: 10px;
       }
     }
+    &__text {
+      padding: 8px 6px !important;
+    }
     &__item {
       // padding: 0 !im;
       h1 {
@@ -111,7 +114,9 @@
       }
       ul {
         li {
-          padding: 8px 6px !important;
+          a {
+            padding: 8px 6px !important;
+          }
         }
       }
     }
