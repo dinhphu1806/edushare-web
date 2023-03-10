@@ -34,6 +34,11 @@
       letter-spacing: -0.01em;
       color: #2076ff;
       color: var(--clr-font);
+      &:hover {
+        background-color: #2076ff;
+        border: 1px solid #2076ff;
+        color: #fff;
+      }
     }
   }
   &__items {
