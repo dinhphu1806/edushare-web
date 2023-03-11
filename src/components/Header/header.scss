@@ -178,3 +178,31 @@
 .darkmode {
   color: var(--clr-font);
 }
+
+// sticky
+.sticky {
+  width: 100%;
+  height: 90px;
+  // padding: 20px 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  background-color: var(--clr-bgc);
+  box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s linear;
+  animation: headerzoom 1s;
+}
+@keyframes headerzoom {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 768px) {
+  .sticky {
+    height: 80px;
+  }
+}

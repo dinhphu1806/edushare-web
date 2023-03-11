@@ -74,7 +74,10 @@ const Courses = () => {
                   style={{ borderRadius: "14px" }}
                 >
                   <Item className="courses__item">
-                    <div className="image">
+                    <div
+                      className="image relative"
+                      style={{ overflow: "hidden", cursor: "pointer" }}
+                    >
                       <img src={item.image} className="img-cover" alt="" />
                     </div>
                     <h1
@@ -110,11 +113,18 @@ const Courses = () => {
                         borderRadius: "7px",
                         border: "1px solid #2076ff",
                         cursor: "pointer",
+                        // backgroundColor: "#fff",
+                        // color: "#2076ff",
+                        transition: " all 0.3s linear",
                       }}
                     >
                       <BsCartPlusFill
                         className="icon"
-                        style={{ marginRight: "7px" }}
+                        style={{
+                          marginRight: "7px",
+                          width: "18px",
+                          height: "18px",
+                        }}
                       />
                       Add to Cart
                     </button>

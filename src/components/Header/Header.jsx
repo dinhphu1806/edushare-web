@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import "./header.scss";
 import { menuData } from "./menuData";
 import { NavLink } from "react-router-dom";
@@ -9,6 +9,7 @@ import { BiSearch } from "react-icons/bi";
 
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import ModalSearh from "../ModalSearch/ModalSearh";
 
 // const getThemeToStorage = () => {
 //   let theme = "light-theme";
@@ -39,7 +40,11 @@ const Header = () => {
 
   const [theme, setTheme] = useState(getThemeToStorage());
 
+  const [openSearch, setOpenSearch] = useState(false);
+
   const navigate = useNavigate();
+
+  const headerRef = useRef(null);
 
   const toggleTheme = () => {
     if (theme === "light-theme") {
@@ -49,12 +54,34 @@ const Header = () => {
     }
   };
 
+  // handle func sticky
+  const handleStickyHeader = () => {
+    window.addEventListener("scroll", () => {
+      if (
+        document.body.scrollTop > 80 ||
+        document.documentElement.scrollTop > 80
+      ) {
+        headerRef.current.classList.add("sticky");
+      } else {
+        headerRef.current.classList.remove("sticky");
+      }
+    });
+  };
   useEffect(() => {
     document.documentElement.className = theme;
     localStorage.setItem("theme", theme);
   }, [theme]);
+
+  useEffect(() => {
+    // sticky
+    handleStickyHeader();
+    return () => {
+      window.removeEventListener("scroll", handleStickyHeader);
+    };
+  });
+
   return (
-    <div className="header">
+    <div className="header" ref={headerRef}>
       <div className="header__container container flex flex-between ">
         <NavLink to="/" className="header__logo flex relative">
           <div
@@ -101,6 +128,14 @@ const Header = () => {
         </ul>
 
         <div className="flex flex-between">
+          <motion.div
+            whileTap={{ scale: 1.2 }}
+            className="header__search__desktop mr-1 "
+            style={{ cursor: "pointer" }}
+            onClick={() => setOpenSearch(!openSearch)}
+          >
+            <BiSearch className="fs-18 fw-600" />
+          </motion.div>
           <motion.button
             whileTap={{ scale: 1.2 }}
             className="header__darkmode-desktop mr-2"
@@ -123,6 +158,7 @@ const Header = () => {
             whileTap={{ scale: 1.2 }}
             className="header__search__mobile mr-1 "
             style={{ cursor: "pointer" }}
+            onClick={() => setOpenSearch(!openSearch)}
           >
             <BiSearch className="fs-18 fw-600" />
           </motion.div>
@@ -144,6 +180,9 @@ const Header = () => {
             )}
           </div>
         </div>
+        {openSearch && (
+          <ModalSearh openSearch={openSearch} setOpenSearch={setOpenSearch} />
+        )}
       </div>
     </div>
   );

@@ -27,10 +27,8 @@ const Lecture = () => {
           <Grid item xs={12} md={6}>
             <Item
               className="lecture__left"
-              data-aos="fade-zoom-in"
-              data-aos-easing="ease-in-back"
-              data-aos-delay="300"
-              data-aos-offset="0"
+              data-aos="fade-right"
+              data-aos-duration="2000"
             >
               <h1
                 className="fw-700"

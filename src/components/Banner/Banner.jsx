@@ -92,12 +92,18 @@ const Banner = () => {
                   <div className="image relative">
                     <img src={img} className="img-cover" alt="" />
                   </div>
-                  <div className="fill-1">
+                  <div
+                    className="fill-1"
+                    data-aos="fade-down-right"
+                    data-aos-offset="300"
+                  >
                     <img src={img1} alt="" />
                   </div>
                   <div
                     className="fill-2"
                     style={{ backgroundColor: "#fff0", borderRadius: "10px" }}
+                    data-aos="fade-left"
+                    data-aos-offset="300"
                   >
                     <div className="fill-2__container">
                       <h1
@@ -138,12 +144,20 @@ const Banner = () => {
                   </div>
                   {/* <div className="fill__right"></div> */}
                   <div className="fill-3">
-                    <div className="fill-3__container relative">
+                    <div
+                      className="fill-3__container relative"
+                      data-aos="fade-left"
+                      data-aos-offset="300"
+                    >
                       <img src={img3} alt="" />
                     </div>
                   </div>
 
-                  <div className="fill-4">
+                  <div
+                    className="fill-4"
+                    data-aos="fade-right"
+                    data-aos-offset="300"
+                  >
                     <div className="fill-4__container">
                       <div className="flex">
                         <div className="circle flex relative">
