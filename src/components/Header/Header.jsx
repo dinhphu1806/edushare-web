@@ -124,7 +124,12 @@ const Header = () => {
               </li>
             );
           })}
-          <div className="header__login__mobile">Sign In</div>
+          <div
+            className="header__login__mobile"
+            onClick={() => navigate("/signin")}
+          >
+            Sign In
+          </div>
         </ul>
 
         <div className="flex flex-between">
@@ -171,7 +176,9 @@ const Header = () => {
           </motion.button>
           <div
             className="header__icon__bars fs-24"
-            onClick={() => setOpenMobile(!openMobile)}
+            onClick={() => {
+              setOpenMobile(!openMobile);
+            }}
           >
             {openMobile ? (
               <ImCross className="close" />

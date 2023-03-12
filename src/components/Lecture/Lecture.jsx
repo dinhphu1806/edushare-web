@@ -35,15 +35,35 @@ const Lecture = () => {
                 style={{
                   fontFamily: '"Inter", sans-serif',
                   fontStyle: "normal",
+                  textTransform: "unset",
                 }}
               >
                 Transform your life through education
               </h1>
-              <p>
+              <p
+                style={{
+                  fontFamily: '"Roboto", sans-serif',
+                  fontStyle: "normal",
+                  color: "#606176",
+                }}
+                className="fw-400"
+              >
                 Ariel Hocsman launched a new career in software development by
                 taking courses on Besnik. What will you be able to do?
               </p>
-              <button>Get Started</button>
+              <button
+                style={{
+                  backgroundColor: "#f77e53",
+                  borderRadius: "16px",
+                  fontFamily: '"Inter", sans-serif',
+                  fontStyle: "normal",
+                  color: "#fef4f1",
+                  cursor: "pointer",
+                }}
+                className="fw-600"
+              >
+                Get Started
+              </button>
             </Item>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -53,9 +73,13 @@ const Lecture = () => {
                 data-aos="fade-left"
                 data-aos-duration="2000"
               >
-                <div className="lecture__right__overlay"></div>
+                <div
+                  className="lecture__right__overlay"
+                  style={{ backgroundColor: "#f6f5fa", borderRadius: "18px" }}
+                ></div>
                 <div className="lecture__right__image">
-                  <img src={imgbanner} alt="" />
+                  <img src={imgbanner} className="img-cover" alt="" />
+
                   <div className="circle">
                     <BsFillPlayCircleFill className="icon" />
                   </div>
@@ -64,22 +88,46 @@ const Lecture = () => {
                   className="lecture__right__images flex"
                   // style={{ overflow: "hidden", width: "100%" }}
                 >
-                  <div className="items">
+                  <div className="items relative">
                     <div className="item">
-                      <img src={img1} alt="" />
-                      <h1>Lecture 1</h1>
+                      <img src={img1} alt="" className="img-cover" />
+                      <h1
+                        style={{
+                          fontFamily: '"Inter", sans-serif',
+                          fontStyle: "normal",
+                        }}
+                        className="fw-600"
+                      >
+                        Lecture 1
+                      </h1>
                     </div>
                   </div>
-                  <div className="items">
+                  <div className="items relative">
                     <div className="item">
                       <img src={img2} alt="" />
-                      <h1>Lecture 2</h1>
+                      <h1
+                        style={{
+                          fontFamily: '"Inter", sans-serif',
+                          fontStyle: "normal",
+                        }}
+                        className="fw-600"
+                      >
+                        Lecture 2
+                      </h1>
                     </div>
                   </div>
-                  <div className="items">
+                  <div className="items relative">
                     <div className="item">
                       <img src={img3} alt="" />
-                      <h1>Lecture 3</h1>
+                      <h1
+                        style={{
+                          fontFamily: '"Inter", sans-serif',
+                          fontStyle: "normal",
+                        }}
+                        className="fw-600"
+                      >
+                        Lecture 3
+                      </h1>
                     </div>
                   </div>
                 </div>

@@ -1,5 +1,18 @@
 @import "../../sass/_reset";
 
+.modal-search {
+  &__container {
+    .flex {
+      input {
+        &:focus {
+          border: 2px solid #555;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 440px) {
   .modal-search {
     &__container {

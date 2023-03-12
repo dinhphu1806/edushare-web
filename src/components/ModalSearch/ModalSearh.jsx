@@ -32,6 +32,7 @@ const ModalSearh = ({ openSearch, setOpenSearch }) => {
     position: "absolute",
     right: "10%",
     fontSize: "18px",
+    cursor: "pointer",
     color: "#000",
   };
   return (

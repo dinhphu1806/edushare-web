@@ -130,6 +130,7 @@ const Feedback = () => {
                   <p className="mt-1 mb-1">{item.desc}</p>
                   <div className="feedback__info flex mt-2">
                     <img src={item.imgAvatar} alt="" />
+
                     <div className=" ml-2">
                       <span>{item.userName}</span>
                       <p>{item.address}</p>
